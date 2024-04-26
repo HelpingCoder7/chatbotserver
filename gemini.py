@@ -1,12 +1,10 @@
 import google.generativeai as genai
-from dotenv import load_dotenv
 import os
 
 
-load_dotenv()
 
 def chat_with_gemini(prompt_parts):
-    genai.configure(api_key=os.getenv('OPEN_API_KEY'))
+    genai.configure(api_key="AIzaSyD5C-Lh-QkwvjHlpd6f7FiJYhlsOd2DLYA")
 
     # Set up the model
     generation_config = {

@@ -43,7 +43,7 @@ def chat_with_gemini(prompt_parts):
     
     response = model.generate_content(prompt_parts)
     
-    return response.text
+    return response['data'][0]
 
 # p=chat_with_gemini("hi")
 # print(p.text.strip())
